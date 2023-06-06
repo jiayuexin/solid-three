@@ -9,7 +9,7 @@
 		"typecheck": "tsc",
 		"start": "webpack-dev-server --config webpack.config.js",
 		"build": "webpack --config webpack.config.js --mode=production",
-		"pushGIt": "git add . && git commit -m '111'"
+		"pushGIt": "git add . && git commit -m '111' && git push"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.1",
