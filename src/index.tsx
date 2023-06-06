@@ -2,6 +2,7 @@ import { render } from 'solid-js/web'
 import { useRoutes, A, Router } from '@solidjs/router'
 import styles from './index.module.less'
 import { RouterChild, SettingRoutes } from './router'
+
 // import routes from './router'
 // function App() {
 // 	const Routes = useRoutes(routes)
