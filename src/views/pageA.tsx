@@ -107,8 +107,7 @@ export default function PageA() {
 	onMount(() => {
 		const el = document.querySelector('#webgl')
 		console.log(el)
-
-		el.appendChild(renderer.domElement)
+		el?.appendChild(renderer.domElement)
 	})
 	return <div id="webgl" style="margin-top: 200px; margin-left: 100px"></div>
 }
