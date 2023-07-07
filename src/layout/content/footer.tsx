@@ -1,3 +1,3 @@
 export default function () {
-	return <div>页脚</div>
+	return <div class="footer">页脚</div>
 }

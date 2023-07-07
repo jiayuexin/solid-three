@@ -4,7 +4,7 @@ import Footer from './footer'
 
 export default function () {
 	return (
-		<div>
+		<div class="content">
 			<Banner />
 			<Content />
 			<Footer />

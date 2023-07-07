@@ -1,3 +1,3 @@
 export default function () {
-	return <div>头部样式</div>
+	return <div class="headers">头部样式</div>
 }
