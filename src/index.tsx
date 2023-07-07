@@ -1,28 +1,11 @@
 import { render } from 'solid-js/web'
-import { useRoutes, A, Router } from '@solidjs/router'
-import styles from './index.module.less'
-import { RouterChild, SettingRoutes } from './router'
-
-// import routes from './router'
-// function App() {
-// 	const Routes = useRoutes(routes)
-// 	return (
-// 		<Router>
-// 			<nav>
-// 				<A href={'/'}>to page A</A>
-// 				<A href={'pageB'}>to page B</A>
-// 				<A href={'pageC'}>to page C</A>
-// 			</nav>
-// 			<Routes></Routes>
-// 		</Router>
-// 	)
-// }
+import { Router } from '@solidjs/router'
+import { SettingRoutes } from './router'
 function App() {
 	return (
-		<>
-			{/* <RouterChild></RouterChild> */}
+		<Router>
 			<SettingRoutes></SettingRoutes>
-		</>
+		</Router>
 	)
 }
 render(() => <App />, document.querySelector('#app')!)
