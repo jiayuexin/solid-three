@@ -1,5 +1,5 @@
 import { For } from 'solid-js'
-import { useNavigate } from 'solid-app-router'
+import { useNavigate } from '@solidjs/router'
 import { children } from '../router'
 
 export default function () {
@@ -9,11 +9,11 @@ export default function () {
 	}
 	return (
 		<div class="menu">
-			<For each={children}>
+			<For each={children[0].children}>
 				{item => {
 					return (
-						<div class={`menu-select ${item.data.select ? 'menu-select-active' : ''}`} onClick={() => menuClick(item.path)}>
-							{item.data.name}
+						<div class={`menu-select ${item.meta.select ? 'menu-select-active' : ''}`} onClick={() => menuClick(item.path)}>
+							{item.data().name}
 						</div>
 					)
 				}}

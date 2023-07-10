@@ -1,5 +1,5 @@
 import { render } from 'solid-js/web'
-import { Router } from 'solid-app-router'
+import { Router } from '@solidjs/router'
 import { SettingRoutes } from './router'
 function App() {
 	return (
